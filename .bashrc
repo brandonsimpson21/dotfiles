@@ -121,13 +121,7 @@ fi
 
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 gpgconf --launch gpg-agent
-export PATH=/usr/local/cuda-11.8/bin${PATH:+:${PATH}}
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-11.8/lib64
-export ANDROID_SDK_ROOT=~/Android/Sdk
-export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
-export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
 
-export TRANSFORMERS_CACHE="/mnt/md0/huggingface"
 
 # Wasmer
 export WASMER_DIR="~/wasmer"
