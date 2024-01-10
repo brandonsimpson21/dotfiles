@@ -52,7 +52,6 @@ else
 	abbr -a lll 'ls -la'
 end
 
-
 # Type - to move up to top parent dir which is a repository
 function d
 	while test $PWD != "/"

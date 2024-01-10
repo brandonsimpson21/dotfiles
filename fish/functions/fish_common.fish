@@ -7,8 +7,8 @@ function docker_qdrant
 		qdrant/qdrant
 end
 
-function docker_surreal
-	docker run --rm --pull always --name surrealdb-dev -p 5432:5432 surrealdb/surrealdb:latest start --log trace --user surrealdb --pass password memory
+function docker_surrealdb
+	docker run --rm --pull always --name surrealdb-dev -p 5432:8000 surrealdb/surrealdb:latest start --log trace --user surrealdb --pass password memory
 end
 
 function docker_redis
